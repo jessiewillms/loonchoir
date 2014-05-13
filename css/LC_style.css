@@ -1,0 +1,281 @@
+
+/*BOX-SIZING*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}a{background:0 0;}a:active,a:hover{outline:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}h1{margin:.67em 0;font-size:2em;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:1em 40px;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}pre{overflow:auto;}code,kbd,pre,samp{font-size:1em;font-family:monospace,monospace;}button,input,optgroup,select,textarea{margin:0;color:inherit;font:inherit;}button{overflow:visible;}button,select{text-transform:none;}button,html input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button;}button[disabled],html input[disabled]{cursor:default;}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}input{line-height:normal;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;}input[type=search]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{margin:0 2px;padding:.35em .625em .75em;border:1px solid silver;}legend{padding:0;border:0;}textarea{overflow:auto;}optgroup{font-weight:700;}table{border-spacing:0;border-collapse:collapse;}td,th{padding:0;}
+
+* {
+	box-sizing: border-box; 
+	margin: 0 auto;
+}
+
+/* CLEARFIX */
+
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: " ";
+    font-size: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+p {
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+	padding: 5% 0;
+	color: #fff;
+	text-align: center;
+	font-size: 4.5em;
+	font-family: 'Abril Fatface', cursive;
+}
+
+h3 {
+	color: #333;	
+	text-align: left;
+	font-size: 3em;
+	font-family: 'Abril Fatface', cursive;
+}
+
+/*NAVIGATION BAR | NAVIGATION BAR | NAVIGATION BAR*/
+.navBar {
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+	padding: 2%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.navBar {
+	font-size: 1.25em;
+}
+
+ul.navBar li {
+	position: relative;
+	display: inline;
+	padding: 0 3%;
+	color: #C20027;
+	list-style: none;
+	font-family: 'Abril Fatface';
+}
+
+ul.navBar li ul li {
+	display: list-item;
+}
+
+ul.navBar li ul {
+	position: absolute;
+	display: none;
+	background: rgba(255, 255, 255, 0.25);
+	list-style: none;
+}
+
+ul.navBar li:hover ul {
+	display: block;
+}
+
+ul.navBar a {
+	color: #C20027;
+	text-decoration: none;
+}
+
+ul.navBar a:hover {
+	color: white;
+}
+
+/*CONTENT*/
+header {
+	top: 0;
+	margin: 0 auto;
+	padding: 75px 0 450px 0;
+	background-image: url(../images/masonjars.jpg);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+}
+
+/*ABOUT: INTRO*/
+.about {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.about p {
+	padding: 4% 2%;
+	color: #333;
+	font-size: 2em;
+	font-family: 'Abril Fatface', cursive;
+	line-height: 2em;
+}
+
+.about p::first-line {
+	color: #C20027;
+	font-size: 1.15em;
+}
+
+/*ABOUT2: BIO*/
+
+.bio {
+	margin: 0 auto;
+	padding-bottom: 5%;
+	width: 80%;
+}
+
+.bio p {
+	float: left;
+	margin: 0 auto;
+	padding: 0 2% 2% 0;
+	width: 50%;
+	color: #333;
+	font-size: 1.25em;
+	line-height: 2em;
+}
+
+.bio a {
+	color: #333;
+	text-decoration: none;
+}
+
+.bio a:hover {
+	color: #C20027;
+}
+
+/*SKED SKED SKED SKED SKED SKED*/
+
+td {
+	clear: both;
+	margin: 0;
+	padding: 1%;
+	width: 33.3%;
+	text-align: left;
+	font-size: 1.5em;
+	font-family: 'Abril Fatface', cursive;
+	color: #333;
+}
+
+table {
+	max-width: 100%;
+}
+
+tr:nth-child(even) {
+	background-color: #E8E8EE;
+}
+
+td a {
+	color: #333;
+	text-decoration: none;
+}
+
+td a:hover {
+	color: #C20027;
+}
+
+th {
+	clear: both;
+	margin: 0;
+	padding: 1%;
+	width: 33.3%;
+	text-align: left;
+	font-size: 1.15em;
+	font-family: 'Abril Fatface', cursive;
+	/*font-family: 'comppro-webfont';*/
+	color: #C20027;
+}
+
+.skedWrapper {
+	margin-bottom: 3%;
+	max-width: 80%;
+}
+
+/*MEDIA*/
+
+.media {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.media img {
+	padding: 0.5% 0;
+	width: 100%;
+	border-bottom: 1px solid #C20027;
+}
+
+.mediaSmall img {
+	float: left;
+	width: 33.3%;
+}
+
+.media img:hover {
+	opacity: 0.90;
+}
+
+
+/*contactFORM | contactFORM | contactFORM*/
+
+.contactForm {
+	width: 75%;	
+}
+
+/*CONTACT FORM*/
+
+.contactUs {
+    margin: 0 auto;
+    padding: 3%;
+    width: 80%;
+    color: #333;
+    font: 1em 'Abril Fatface';
+}
+
+label {
+    display: block;
+    margin-bottom: 3%;
+}
+
+label>span {
+    float: left;
+    margin-top: 3%;
+    padding-right: 3%;
+    width: 15%;
+    color: #333;
+    text-align: right;
+}
+
+input[type="text"], input[type="email"],  textarea, select {
+    padding: 1% 3%;
+    width: 85                                           %;
+    margin-right: 0;
+    border: 1px solid #DADADA;
+    color: #333;
+    font: 0.75em 'Abril Fatface';
+}
+
+.button {
+    padding: 1% 3%;
+    border: none;
+    background: #C20027;
+    color: #FFF;
+    font: 0.75em 'Abril Fatface';
+}
+.button:hover {
+    background: #CF7A7A;
+}
+
+/*FOOTER*/
+footer {
+	bottom: 0;
+	width: 100%;
+	background-color: #C20027;
+}
+
+footer p {
+	padding: 0.75%;
+	width: 80%;
+	font-size: 1.25em;
+	font-family: 'Abril Fatface', cursive;
+	color: #fff;
+}
+
